@@ -1,0 +1,244 @@
+/* Base Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #3f245f;
+    color: #fff;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+h1 {
+    font-size: 2.8em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 1.25em;
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: transparent; 
+    color: inherit; 
+}
+
+section h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+}
+
+/* Link styles */
+a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #ddd;
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: 3px solid #fff;
+    outline-offset: 2px;
+}
+
+/* CV Link Styling */
+.section-services a[href*="CV"] {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid #fff;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.section-services a[href*="CV"]:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Consulting Page Specific Styles */
+.section-consulting-header {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: transparent;
+    color: inherit;
+}
+
+.section-consulting-header h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+}
+
+.section-consulting-header p {
+    font-size: 1.25em;
+    line-height: 1.6;
+}
+
+.section-services {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: transparent;
+    color: inherit;
+}
+
+.section-services h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+}
+
+.services-list {
+    list-style: none;
+    padding: 0;
+}
+
+.services-list li {
+    font-size: 1.25em;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.services-list li:before {
+    content: "•";
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.section-select-work {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: transparent;
+    color: inherit;
+}
+
+.section-select-work h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+}
+
+.section-select-work p {
+    font-size: 1.25em;
+    margin-bottom: 15px;
+}
+
+.section-contact-consulting {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: transparent;
+    color: inherit;
+}
+
+.section-contact-consulting h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+}
+
+.section-contact-consulting p {
+    font-size: 1.25em;
+    line-height: 1.6;
+}
+
+.section-credentials {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: transparent;
+    color: inherit;
+}
+
+.section-credentials h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+}
+
+.section-credentials h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.section-credentials p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+
+    section {
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    h1 {
+        font-size: 2.2em;
+    }
+
+    section h2 {
+        font-size: 2em;
+    }
+
+    .section-consulting-header h1 {
+        font-size: 2.5em;
+    }
+
+    p, .services-list li, .section-select-work p {
+        font-size: 1.1em;
+    }
+}
